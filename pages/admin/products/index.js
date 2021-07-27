@@ -1,3 +1,4 @@
+import Container from "@material-ui/core/Container";
 import React from "react";
 
 import { Table } from "../../../components/dashboard";
@@ -38,7 +39,9 @@ const headCells = [
 export default function ProductsPage() {
   return (
     <>
-      <Table rows={rows} headCells={headCells} tableName="Nutritions" />
+      <Container>
+        <Table rows={rows} headCells={headCells} tableName="Nutritions" />
+      </Container>
     </>
   );
 }

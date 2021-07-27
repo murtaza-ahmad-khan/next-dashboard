@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Checkbox, TableCell, TableHead, TableRow } from "@material-ui/core";
+import Checkbox from "@material-ui/core/Checkbox";
+import TableCell from "@material-ui/core/TableCell";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
 
 export default function TableHeader(props) {
   const {

@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
-import {
-  AppBar,
-  Avatar,
-  IconButton,
-  makeStyles,
-  Toolbar,
-  Checkbox,
-  Hidden,
-} from "@material-ui/core";
+import AppBar from "@material-ui/core/AppBar";
+import Avatar from "@material-ui/core/Avatar";
+import IconButton from "@material-ui/core/IconButton";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import Toolbar from "@material-ui/core/Toolbar";
+import Checkbox from "@material-ui/core/Checkbox";
+import Hidden from "@material-ui/core/Hidden";
 
 import Icon from "./common/Icon";
 import Menu from "./common/Menu";

@@ -8,7 +8,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import Collapse from "@material-ui/core/Collapse";
-import { makeStyles } from "@material-ui/core/styles";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import Icon from "../Icon";
 

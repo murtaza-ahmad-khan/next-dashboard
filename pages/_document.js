@@ -21,6 +21,8 @@ export default class MyDocument extends Document {
   }
 }
 
+// `getInitialProps` belongs to `_document` (instead of `_app`),
+// it's compatible with server-side generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
@@ -34,11 +36,10 @@ MyDocument.getInitialProps = async (ctx) => {
 
   return {
     ...initialProps,
+    // Styles fragment is rendered after the app and page rendering finish.
     styles: [
-      <React.Fragment key="styles">
-        {initialProps.styles}
-        {sheets.getStyleElement()}
-      </React.Fragment>,
+      ...React.Children.toArray(initialProps.styles),
+      sheets.getStyleElement(),
     ],
   };
 };

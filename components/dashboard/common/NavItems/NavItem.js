@@ -5,7 +5,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Icon from "../Icon";
-import { makeStyles } from "@material-ui/core";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const useStyles = makeStyles({
   listItem: {

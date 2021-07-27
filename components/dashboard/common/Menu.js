@@ -1,15 +1,13 @@
 import React from "react";
-import {
-  ClickAwayListener,
-  Grow,
-  IconButton,
-  ListItemIcon,
-  MenuItem,
-  MenuList,
-  Paper,
-  Popper,
-  Typography,
-} from "@material-ui/core";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import Grow from "@material-ui/core/Grow";
+import IconButton from "@material-ui/core/IconButton";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import MenuItem from "@material-ui/core/MenuItem";
+import MenuList from "@material-ui/core/MenuList";
+import Paper from "@material-ui/core/Paper";
+import Popper from "@material-ui/core/Popper";
+import Typography from "@material-ui/core/Typography";
 
 /**
  * @param  Component MenuButton
