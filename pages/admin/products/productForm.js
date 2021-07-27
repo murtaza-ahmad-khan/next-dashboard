@@ -73,10 +73,10 @@ export default function ProductForm() {
             />
 
             <Grid container spacing={2} className={classes.flexGrow}>
-              <Grid item sm={12} md={3}>
+              <Grid item xs={12} sm={12} md={3}>
                 <Input label="Price" name="price" type="number" fullWidth />
               </Grid>
-              <Grid item sm={12} md={3}>
+              <Grid item xs={12} sm={12} md={3}>
                 <Input
                   label="Quantity"
                   name="quantity"
@@ -84,19 +84,19 @@ export default function ProductForm() {
                   fullWidth
                 />
               </Grid>
-              <Grid item sm={12} md={3}>
+              <Grid item xs={12} sm={12} md={3}>
                 <Input label="Color" name="color" fullWidth />
               </Grid>
-              <Grid item sm={12} md={3}>
+              <Grid item xs={12} sm={12} md={3}>
                 <Input label="Size" name="size" fullWidth />
               </Grid>
-              <Grid item sm={12} md={4}>
+              <Grid item xs={12} sm={12} md={4}>
                 <Input label="Weight" name="weight" fullWidth />
               </Grid>
-              <Grid item sm={12} md={4}>
+              <Grid item xs={12} sm={12} md={4}>
                 <Input label="Sale" name="sale" type="number" fullWidth />
               </Grid>
-              <Grid item sm={12} md={4}>
+              <Grid item xs={12} sm={12} md={4}>
                 <Input
                   field="select"
                   label="Category"
@@ -114,7 +114,9 @@ export default function ProductForm() {
             />
             <Input label="SEO Keywords" name="seo_keywords" fullWidth />
 
-            <Button type="submit">Submit</Button>
+            <Button type="submit" variant="contained" color="primary">
+              Submit
+            </Button>
           </Form>
         </CardContent>
       </Card>

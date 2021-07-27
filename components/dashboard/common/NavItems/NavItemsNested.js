@@ -46,16 +46,11 @@ export default function NavItemsNested({ title, iconName, items = [] }) {
       </ListItem>
 
       <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding={true}>
+        <List component="div">
           {items.map((menu) => (
             <Link href={menu.link} key={menu.link}>
               <a>
-                <ListItem
-                  button
-                  component="li"
-                  className={classes.nested}
-                  disablePadding={true}
-                >
+                <ListItem button component="li" className={classes.nested}>
                   <ListItemIcon>
                     <Icon name={menu.iconName} />
                   </ListItemIcon>

@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     marginLeft: 0,
+    [theme.breakpoints.down("sm")]: {
+      padding: 8,
+      paddingTop: 15,
+    },
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
@@ -52,7 +56,7 @@ export default function Dashboard({ children }) {
         })}
       >
         <div className={classes.toolbar} />
-        <Container maxWidth="xl">{children}</Container>
+        {children}
       </main>
     </>
   );

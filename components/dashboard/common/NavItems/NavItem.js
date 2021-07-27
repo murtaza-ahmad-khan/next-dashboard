@@ -7,11 +7,11 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Icon from "../Icon";
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   listItem: {
     borderRadius: 8,
   },
-}));
+});
 
 /**
  * @param  string title

@@ -84,8 +84,6 @@ export default function Header({
             onChange={() => setDarkMode(!darkMode)}
             className={classes.icon}
           />
-
-          <Icon name="Notifications" className={classes.icon} />
           <Menu
             MenuButton={<Avatar />}
             items={[{ title: "Profile" }, { title: "Logout" }]}
